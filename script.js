@@ -15,8 +15,6 @@ function createList( data ) {
 
   // Loop through the list of results to get the author, book_image, description, and title
   for (let i = 0; i < 1; i++) {
-    
-    // $('#results1').append(`<h3>${data.results.lists[0].list_name}</h3>`)
 
     for (let j = 0; j < data.results.lists[0].books.length; j++) {
       $('#results1').append(
@@ -29,7 +27,6 @@ function createList( data ) {
       </div>`)
     }
 
-    // $('#results2').append(`<h3>${data.results.lists[1].list_name}</h3>`)
 
     for (let k = 0; k < data.results.lists[1].books.length; k++) {
       $('#results2').append(
