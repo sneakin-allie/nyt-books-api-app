@@ -1,6 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lora;
+  background-color: antiquewhite;
+}
+
+main {
+  width: 90%;
+  margin: 0px auto;
+}
+
+footer {
+  padding: 20px;
+}
+
 img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
+  margin: 0 auto;
+  padding: 20px;
+  width: 70%;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Text styling */
+
+h1 {
+  font-size: 88px;
+  font-style: italic;
+  color: darkgreen;
+  overflow-wrap: break-word;
+  margin: 20px 0px;
+}
+
+h2 {
+  font-size: 28px;
+  margin: 0px;
+}
+
+h3 {
+  font-size: 28px;
+  margin: 20px 0px 0px 0px;
+}
+
+p {
+  font-size: 18px;
+  margin: 10px;
+  text-align: left;
+}
+
+p.book-title {
+  margin: 0px 10px 10px 10px;
+}
+
+.fix-margin {
+  margin: 20px 0px;
+}
+
+.book-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Button styling */
+
+.button {
+  text-align: center;
+  margin-top: 10px;
+  padding: 3px 8px;
+}
+
+/* Groups & Items (Mobile first) */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item1 {
+  flex: 1;
+}
+
+.text-left {
+  text-align: left;
+}
+
+/* Group & Items (Desktop) */
+
+@media all and (min-width: 800px) {
+
+  .group {
+    flex-direction: row;
+  }
+
+  img {
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
+  }
+
 }

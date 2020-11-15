@@ -5,21 +5,39 @@
     <meta name="viewport" content="width=device-width">
     <title>NYT Books API App</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
   </head>
   <body>
     <main>
-      <h1>Top 10 Books from the NYT Bestseller Lists for Fiction & Nonfiction</h1>
+      <h1>BookWorm</h1>
+
+      <h2>Discover your next literary adventure!</h2>
+
+      <p class="fix-margin">Browse the top 10 fiction & nonfiction books from the New York Times Best Sellers lists by date.</p>
+
 
       <form>
-        <label for="search">Enter Date:</label>
+        <label for="search">Select a date:</label>
         <input type="date" id="search" name="search" value="YYYY-MM-DD" required>
         <br>
-        <input type="submit">
+        <input class="button" type="submit" value="Search">
       </form>
 
-      <div id="results">
-      </div>
-      
+      <section>
+        <h3 class="hidden">Fiction</h3>
+        <div id="results1" class="group">  
+        </div>
+      </section  
+
+      <section>
+        <h3 class="hidden">Nonfiction</h3>
+        <div id="results2" class="group"> 
+        </div>
+      </section>
+
+    <footer>
+    </footer>  
+
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
