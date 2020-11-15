@@ -30,7 +30,7 @@ img {
 /* Text styling */
 
 h1 {
-  font-size: 88px;
+  font-size: 60px;
   font-style: italic;
   color: darkgreen;
   overflow-wrap: break-word;
@@ -99,6 +99,10 @@ p.book-title {
 
   .group {
     flex-direction: row;
+  }
+
+  h1 {
+    font-size: 88px;
   }
 
   img {
